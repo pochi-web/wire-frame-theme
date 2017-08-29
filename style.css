@@ -15,10 +15,15 @@ Version: 0
 .site_title{
 	color:#333;
 	font-size:24px;
+	margin:0;
+	padding:0.5em 0;
+	line-height:24px;
 }
 .site_description{
 	font-size:18px;
-	line-height: 18px
+	line-height: 24px;
+	margin:0;
+	padding:0.5em 0;
 }
 .logo{
 	margin:0;
@@ -35,7 +40,9 @@ Version: 0
 /*------------------------------------
 メイン
 -------------------------------------*/
-
+#main_section{
+	padding:2em 0;
+}
 
 /*------------------------------------
 フッター
