@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+Theme Name: wire-Framing
+Theme URI: http://pochiweb.hatenablog.com/
+Description: ワイヤーフレーム作成のためのテーマ
+Author: ぽち
+Author URI: http://pochiweb.hatenablog.com/
+Version: 0
+*/
+
+
+/*------------------------------------
+ヘッダー
+-------------------------------------*/
+.site_title{
+	color:#333;
+	font-size:24px;
+}
+.site_description{
+	font-size:18px;
+	line-height: 18px
+}
+.logo{
+	margin:0;
+	padding:0;
+}
+/*------------------------------------
+メインビジュアル
+-------------------------------------*/
+.main_visual{
+	max-width: 100%;
+}
+
+
+/*------------------------------------
+メイン
+-------------------------------------*/
+
+
+/*------------------------------------
+フッター
+-------------------------------------*/
