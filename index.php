@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WordPressでワイヤー組めたらよくない？</title>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
-  
   <!-- Bootstrap -->
   <link href="<?php echo get_template_directory_uri();?>/css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -61,12 +60,11 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
-<div class="container-fluid">
-  <img src="https://placehold.jp/1980x660.png" alt="" class="main_visual">	
+<div class="container-fluid main_image">
+ <div class="row">
+  <img src="https://placehold.jp/1280x660.png" alt="">
+  <h1><?php bloginfo('description');?></h1>
   </div>
- 
-  <div class="container-fluid">
-    <h1 class="main_message"><?php bloginfo('description');?></h1>
   </div>
   <div class="container " id="main_section">
   <div class="row">
