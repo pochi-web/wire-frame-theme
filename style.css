@@ -32,18 +32,33 @@ Version: 0
 /*------------------------------------
 メインビジュアル
 -------------------------------------*/
-.main_visual{
-	max-width: 100%;
+.main_image{
+	position:relative;
+	width:auto;
 }
-
-
+.main_image img{
+	width:100%;
+}
+.main_image h1{
+	color: #fff;
+	width:65%;
+	padding: 1.5% 2%;
+	background-color:#000;
+	position:absolute;
+	top:50%;
+	left:50%;
+}
 /*------------------------------------
 メイン
 -------------------------------------*/
 #main_section{
 	padding:2em 0;
 }
-
+.caption{
+	width:100%;
+	box-sizing:border-box;
+	padding:0.5em;
+}
 /*------------------------------------
 フッター
 -------------------------------------*/
