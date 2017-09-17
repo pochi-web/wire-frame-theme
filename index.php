@@ -65,23 +65,26 @@
   <img src="https://placehold.jp/1980x660.png" alt="" class="main_visual">	
   </div>
  
+  <div class="container-fluid">
+    <h1 class="main_message"><?php bloginfo('description');?></h1>
+  </div>
   <div class="container " id="main_section">
   <div class="row">
    
     <div class="col-lg-3 col-md-6 col-xs-12">
-    <img src="http://placehold.jp/280x280.png" alt="" class="img-rounded img-responsive" >
+    <img src="http://placehold.jp/280x280.png" alt="" class="img-rounded img-responsive center-block" >
     <p class="caption">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
 <div class="col-lg-3 col-md-6 col-xs-12">
-    <img src="http://placehold.jp/280x280.png" alt="" class="img-rounded img-responsive" >
+    <img src="http://placehold.jp/280x280.png" alt="" class="img-rounded img-responsive center-block" >
     <p class="caption">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div> 
 <div class="col-lg-3 col-md-6 col-xs-12">
-    <img src="http://placehold.jp/280x280.png" alt="" class="img-rounded img-responsive" >
+    <img src="http://placehold.jp/280x280.png" alt="" class="img-rounded img-responsive center-block" >
     <p class="caption">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
 <div class="col-lg-3 col-md-6 col-xs-12">
-    <img src="http://placehold.jp/280x280.png" alt="" class="img-rounded img-responsive" >
+    <img src="http://placehold.jp/280x280.png" alt="" class="img-rounded img-responsive center-block" >
     <p class="caption">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>  </div>
   </div>
