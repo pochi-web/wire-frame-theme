@@ -8,7 +8,9 @@ Author URI: http://pochiweb.hatenablog.com/
 Version: 0
 */
 
-
+/*------------------------------------
+BootstrapCSSカスタム
+------------------------------------*/
 /*------------------------------------
 ヘッダー
 -------------------------------------*/
@@ -39,15 +41,25 @@ Version: 0
 .main_image img{
 	width:100%;
 }
-.main_image h1{
-	color: #fff;
-    width: 65%;
+.main_image .top_message_box{
+    width: 50%;
+	height:100%;
+	margin:0;
+	box-sizing:border-box;
     padding: 1.5% 2%;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.6);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0;
+    right: 0;
+}
+.message{
+	margin:0;
+	margin:0;
+	color:#fff;
+	position:absolute;
+	top:50%;
+	right:0;
+	transform:translateX(-50%);
 }
 
 /*------------------------------------
