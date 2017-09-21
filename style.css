@@ -1,78 +1,22 @@
 @charset "UTF-8";
 /*
-Theme Name: wire-Framing
+Theme Name: 野良テーマ
 Theme URI: http://pochiweb.hatenablog.com/
-Description: ワイヤーフレーム作成のためのテーマ
+Description: 野良テーマ
 Author: ぽち
 Author URI: http://pochiweb.hatenablog.com/
 Version: 0
 */
 
-/*------------------------------------
-BootstrapCSSカスタム
-------------------------------------*/
+
 /*------------------------------------
 ヘッダー
 -------------------------------------*/
-.site_title{
-	color:#333;
-	font-size:24px;
-	margin:0;
-	padding:0.5em 0;
-	line-height:24px;
-}
-.site_description{
-	font-size:18px;
-	line-height: 24px;
-	margin:0;
-	padding:0.5em 0;
-}
-.logo{
-	margin:0;
-	padding:0;
-}
-/*------------------------------------
-メインビジュアル
--------------------------------------*/
-.main_image{
-	position:relative;
-	width:auto;
-}
-.main_image img{
-	width:100%;
-}
-.main_image .top_message_box{
-    width: 50%;
-	height:100%;
-	margin:0;
-	box-sizing:border-box;
-    padding: 1.5% 2%;
-    background-color: rgba(0,0,0,0.6);
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.message{
-	margin:0;
-	margin:0;
-	color:#fff;
-	position:absolute;
-	top:50%;
-	right:0;
-	transform:translateX(-50%);
-}
 
 /*------------------------------------
 メイン
 -------------------------------------*/
-#main_section{
-	padding:2em 0;
-}
-.caption{
-	width:100%;
-	box-sizing:border-box;
-	padding:0.5em;
-}
+
 /*------------------------------------
 フッター
 -------------------------------------*/
