@@ -1,0 +1,21 @@
+change h1 placing
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   index.php
+#
+# Changes not staged for commit:
+#	modified:   _notes/dwsync.xml
+#	modified:   css/_notes/dwsync.xml
+#	modified:   fonts/_notes/dwsync.xml
+#	modified:   js/_notes/dwsync.xml
+#	modified:   style.css
+#
+# Untracked files:
+#	.editorconfig
+#	.gitignore
+#	images/_notes/
+#
