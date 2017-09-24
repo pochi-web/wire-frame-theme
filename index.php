@@ -19,16 +19,16 @@
 				<?php endif;?>
 			<?php if(!empty($tags)):
 				foreach($tags as $tag ):?>
-			<ul>
-			<li class="tag_name">
-			<a href="<?php echo get_category_link($tag->term_id);?>">
-				<?php echo $tag->name;?>
-			</a>
-			</li>
-			</ul>
-			<?php endforeach;?>
-			<?php endif;?>
-			<?php endif;?>
+					<ul>
+					<li class="tag_name">
+					<a href="<?php echo get_category_link($tag->term_id);?>">
+						<?php echo $tag->name;?>
+					</a>
+					</li>
+					</ul>
+				<?php endforeach;?>
+		<?php endif;?>
+		<?php endif;?>
  		<?php the_time('Y年n月j日'); ?>
 		<?php the_content();?>
 	<?php endwhile;?>
