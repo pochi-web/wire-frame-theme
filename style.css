@@ -7,11 +7,45 @@ Author: ぽち
 Author URI: http://pochiweb.hatenablog.com/
 Version: 0.1
 */
-
-
+.label{
+	background-color: #f50000;
+}
+/*------------------------------------
+タグ、カテゴリなど
+-------------------------------------*/
+.category_name,
+.tag_name{
+	display:inline-block;
+	width:initial;
+}
+.category_name a,
+.tag_name a{
+	border:1px solid #DEDEDE;
+	padding:0.3em 0.5em;
+	background-color:rgba(20,104,184,0.41);
+	color:#fff;
+	text-decoration: none;
+}
 /*------------------------------------
 ヘッダー
 -------------------------------------*/
+#menu-footer{
+	padding:1em;
+	background: #43C6AC;
+	background: -webkit-linear-gradient(to right,#43C6AC,#191654);
+	background: linear-gradient(to right,#43C6AC,#191654);
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+#menu-footer a{
+	color:#fff;
+}
+
+.sub-menu{
+	display:none;
+}
 
 /*------------------------------------
 メイン

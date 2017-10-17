@@ -6,8 +6,8 @@ wp_enqueue_style('base',get_template_directory_uri().'/css/base.css',
 	'element',
 	'modifier'
 ));
-wp_enqueue_style('element',get_template_directory_uri().'/css/base.css');
-wp_enqueue_style('modifier',get_template_directory_uri().'/css/base.css');
+wp_enqueue_style('element',get_template_directory_uri().'/css/element.css');
+wp_enqueue_style('modifier',get_template_directory_uri().'/css/modifier.css');
 wp_enqueue_style('style',get_stylesheet_uri(),'');
 };
 add_action( 'wp_enqueue_scripts', 'theme_style' );

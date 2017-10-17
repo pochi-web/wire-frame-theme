@@ -8,6 +8,7 @@
 				if(!empty($tags) || !empty($categories) ):?>
 				<?php if(!empty($categories)):
 					foreach($categories as $category ):?>
+					<p class="label">カテゴリ出力</p>
 			<ul>
 			<li class="category_name">
 			<a href="<?php echo get_category_link($category->term_id);?>">
@@ -19,6 +20,7 @@
 				<?php endif;?>
 			<?php if(!empty($tags)):
 				foreach($tags as $tag ):?>
+				<p class="label">タグ出力</p>
 					<ul>
 					<li class="tag_name">
 					<a href="<?php echo get_category_link($tag->term_id);?>">
@@ -34,4 +36,5 @@
 	<?php endwhile;?>
 <?php endif;?>
 </main>
+<?php get_sidebar(); ?>
 <?php get_footer();?>
