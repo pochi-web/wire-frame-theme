@@ -4,7 +4,3 @@
 	'container_class' => 'my_extra_menu_class' ) );
 ?>
 <?php wp_footer();?>
-	
-</body>
-
-</html>

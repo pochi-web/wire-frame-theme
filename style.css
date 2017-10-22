@@ -7,50 +7,93 @@ Author: ぽち
 Author URI: http://pochiweb.hatenablog.com/
 Version: 0.1
 */
-.label{
-	background-color: #f50000;
+body{
+	background: #43C6AC;
+	background: -webkit-linear-gradient(to bottom,#43C6AC,#191654);
+	background: linear-gradient(to bottom,#43C6AC,#191654);
 }
 /*------------------------------------
-タグ、カテゴリなど
+ボタン
 -------------------------------------*/
 .category_name,
 .tag_name{
-	display:inline-block;
-	width:initial;
+	border:1px solid #DEDEDE;
 }
 .category_name a,
 .tag_name a{
-	border:1px solid #DEDEDE;
-	padding:0.3em 0.5em;
-	background-color:rgba(20,104,184,0.41);
+	color:#fff;
+	text-decoration: none;
+}
+
+#menu-global a{
 	color:#fff;
 	text-decoration: none;
 }
 /*------------------------------------
-ヘッダー
+デザイン/ヘッダー
 -------------------------------------*/
-#menu-footer{
-	padding:1em;
+#header_layer{
 	background: #43C6AC;
 	background: -webkit-linear-gradient(to right,#43C6AC,#191654);
 	background: linear-gradient(to right,#43C6AC,#191654);
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-}
-#menu-footer a{
+	text-align: center;
 	color:#fff;
 }
-
-.sub-menu{
-	display:none;
+#header_layer h1{
+	font-size:24px;
 }
+/*------------------------------------
+デザイン/ナビゲーション
+-------------------------------------*/
+#menu-global{
+	border-top:1px solid #dedede;
+	border-bottom:1px solid #dedede ;
+	justify-content: space-between;
+}
+
 
 /*------------------------------------
 メイン
 -------------------------------------*/
+/*-----テキスト設定-----*/
+#main_article h2{
+	font-size:20px;
+	color:#fff;
+	background-color:#0F3260;
+	border-radius: 5px;
+}
 
+#main_article h3{
+	font-size:16px;
+	color:#0F3260;
+	border-top:2px solid #0F3260;
+	border-bottom:2px solid #0F3260;
+	font-weight: bold;
+}
+#main_article h4{
+	font-size:16px;
+	font-weight:600;
+	color:#0F3260;
+	
+}
+#main_article strong{
+	background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+#main_article p{
+	font-size:16px;
+}
+#main_article blockquote{
+	background-color:rgba(142,148,157,0.2)
+}
+#main_article ul li:before{
+	content:"\f0c6";
+	font-family: FontAwesome;
+	color:#43C6AC;
+	margin-right:0.5em;
+	font-size:20px;
+
+}
 /*------------------------------------
 フッター
 -------------------------------------*/
+
