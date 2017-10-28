@@ -133,8 +133,12 @@ body{
 	width:100%;
 	height:100%;
 	padding:6px;
-	font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	font-family: Noto Sans Japanese;
+	font-size:16px
 
+}
+a{
+	text-decoration: none;
 }
 
 .label{
@@ -151,7 +155,7 @@ header{
 }
 #header_layer{
 	position:relative;
-	padding:1em 1em 0 1em;
+	padding:1rem 1rem 0 1rem;
 	opacity:0.9;
 	z-index: 20;
 }
@@ -186,43 +190,54 @@ header{
 	align-items: baseline;
 }
 .category_name,
-.tag_name{
-	/*display:inline-block;*/
+.tag_name {
+	margin:0.35rem;
+}
+.category_name a,
+.tag_name a{
 	width:initial;
-	padding:0.3em 0.5em;
-	margin:0.2em;
-}
+	padding:0.3em 0.5em;	
+} 
 
-#menu-global li{
-	padding:0.3em 0.5em;
-}
+
 /*------------------------------------
 ナビゲーション
 ---------------------------------------*/
-#menu-global{
-position:relative;
+#menu-global-container{
+	position:relative;
 	bottom:0;
 	padding:.5em 0;
 	margin:2em auto 1em;
+	
+}
+#menu-global{
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
+	max-width:680px;
+	margin:auto;
+}
+.menu li a{
+	padding:0.3em 0.5em;
 }
 /*------------------------------------
 アイキャッチ
 ---------------------------------------*/
-.attachment-post-thumbnail{
+header.attachment-post-thumbnail{
 	z-index:10;
 }
 /*------------------------------------
-メイン
+index.php
 -------------------------------------*/
 main{
-	padding:1em 0;
+	padding:1em 0 110px;
 	position: relative;
-	background-color:#fff;
 	z-index:30;
+}
+article{
+	 max-width: 760px;
+    margin: auto;
 }
 h2,
 h3{
@@ -231,28 +246,14 @@ h3{
 	line-height:1.7;
 
 }
-/*
-#main_article h2:before,
-#main_article h3:before,
-#main_article h4:before{
-	content:"\f120";
-	font-family: FontAwesome;
-	margin-right:0.5em;
-	font-size:24px;
-}
-*/
+
 h4{
 	margin: 1em 0.5em;
     padding: .5em;
 	line-height:1.7;
 }
 
-p{
-	margin: 0 0.5em;
-    padding: .5em;
-	line-height: 1.7;
-}
-ul{
+p,ul,#menu-global-container{
 	margin: 0 0.5em;
     padding: .5em;
 	line-height: 1.7;
@@ -269,17 +270,112 @@ ol{
 	width:70%;
 	line-height: 1.7;
 }
+/*-----------------------------
+category.php
+-------------------------------*/
+#category_main{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start;
+}
+.articles_index{
+	height:auto;
+	width:50%;
+	padding-bottom: 3.5rem;
 
+}
+.articles_index h2{
+	line-height:1.35;
+}
+.articles_index_thumbnail{
+	height:7rem;
+	overflow: hidden;
+    padding: 0.7rem;
+	
+}
+.articles_index .attachment-post-thumbnail{
+	box-sizing: border-box;
+    position: static;
+    width: 100%;
+	height:auto;
+
+}
+.articles_index h2{
+	margin:0;
+	padding:0 0.7rem;
+	font-size:0.9rem;
+}
+time{
+	font-size:0.75rem;
+	padding:0.3rem 0.7rem;
+	
+}
+#tag_list{
+	margin:0;
+	padding:0 0.7em;
+	display:flex;
+	flex-direction: row;
+	align-items: baseline;
+	align-content: space-between;
+	justify-content: flex-start;
+}
+#tag_navigation{
+	margin-top:0.5rem;
+}
+.articles_index .tag_name {
+	margin:0 0.35rem 0 0;
+}
+.articles_index .tag_name a{
+	width:initial;
+	padding:0em 0.5em;
+	font-size:0.8rem;
+	
+}
 /*------------------------------------
 フッター
 -------------------------------------*/
 footer{
-	background-color: #fff;
+	width: calc(100% - 0.8em);
+    background-color: #272727;
+    padding: 1rem 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
+    margin: 0.4em;
+	
+}
+#copyright{
+	display: flex;
+	flex-direction: row;
+	margin-top:0.5rem;
+	max-width:680px;
+	margin:0.5rem auto;
+	
+}
+.copyright_text{
+	margin-right: auto;
+}
+#back_to_top{
+	margin-right: 0.5em;
+    padding: .5em;
+    line-height: 1.7;
+	border:1px solid #f7f7f7;
+	border-radius: 3px;
+	cursor: pointer;
 }
 @media (min-width:769px){
-	.attachment-post-thumbnail{
+.articles_index_thumbnail {
+    height: 12rem;
+	}
+.attachment-post-thumbnail{
     width: 100%;
     height: auto;
+}
+.articles_index{
+	width:33.333%;
+
 }
 }
 

@@ -1,2 +1,11 @@
+@charset "UTF-8";
 /* CSS Document */
-
+.articles_index .tag_name{
+	border:none;
+	font-size: 0.75rem;
+}
+.articles_index .tag_name a{
+	background: #a01476;
+    font-weight: 200;
+    border-radius: 3px;
+}

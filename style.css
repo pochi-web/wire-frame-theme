@@ -8,9 +8,18 @@ Author URI: http://pochiweb.hatenablog.com/
 Version: 0.1
 */
 body{
+	color:#555;
 	background: #43C6AC;
 	background: -webkit-linear-gradient(to bottom,#43C6AC,#191654);
 	background: linear-gradient(to bottom,#43C6AC,#191654);
+}
+a h2{
+	display:block;
+	color:#555;
+	text-decoration: none;
+}
+main{
+		background-color:#fff;
 }
 /*------------------------------------
 ボタン
@@ -25,7 +34,7 @@ body{
 	text-decoration: none;
 }
 
-#menu-global a{
+.menu a{
 	color:#fff;
 	text-decoration: none;
 }
@@ -40,15 +49,20 @@ body{
 	color:#fff;
 }
 #header_layer h1{
-	font-size:24px;
+	font-size:1.5rem;
+	font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+	font-style:italic;
+
+
 }
 /*------------------------------------
 デザイン/ナビゲーション
 -------------------------------------*/
-#menu-global{
+.menu{
 	border-top:1px solid #dedede;
 	border-bottom:1px solid #dedede ;
 	justify-content: space-between;
+	background-color: #272727;
 }
 
 
@@ -57,30 +71,38 @@ body{
 -------------------------------------*/
 /*-----テキスト設定-----*/
 #main_article h2{
-	font-size:20px;
+	font-size:1.25rem;
 	color:#fff;
 	background-color:#0F3260;
 	border-radius: 5px;
+	font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+	font-style: italic;
 }
 
 #main_article h3{
-	font-size:16px;
+	font-size:1rem;
 	color:#0F3260;
 	border-top:2px solid #0F3260;
 	border-bottom:2px solid #0F3260;
 	font-weight: bold;
+	font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+	font-style: italic;
+
 }
 #main_article h4{
-	font-size:16px;
+	font-size:1rem;
 	font-weight:600;
 	color:#0F3260;
+	font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+	font-style: italic;
+
 	
 }
 #main_article strong{
 	background: linear-gradient(transparent 60%, #ffff66 60%);
 }
 #main_article p{
-	font-size:16px;
+	font-size:1rem;
 }
 #main_article blockquote{
 	background-color:rgba(142,148,157,0.2)
@@ -89,11 +111,24 @@ body{
 	content:"\f0c6";
 	font-family: FontAwesome;
 	color:#43C6AC;
-	margin-right:0.5em;
-	font-size:20px;
+	margin-right:0.5rem;
+	font-size:1.25rem;
 
 }
+/*-----------------------------
+category.php
+-------------------------------*/
+.articles_index h2 a{
+	color:#555;
+}
+
+
 /*------------------------------------
 フッター
 -------------------------------------*/
+footer a,
+#copyright{
+	font-size:12px;
+	color:#fff;
+}
 

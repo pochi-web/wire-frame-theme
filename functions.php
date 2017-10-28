@@ -1,12 +1,9 @@
 <?php
 //load css file
 function theme_style(){
-wp_enqueue_style('base',get_template_directory_uri().'/css/base.css',
-				 array(
-	'element',
-	'modifier'
-));
 wp_enqueue_style('font-aweasome','https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
+wp_enqueue_style('google-font','https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"');
+wp_enqueue_style('base',get_template_directory_uri().'/css/base.css');
 wp_enqueue_style('element',get_template_directory_uri().'/css/element.css');
 wp_enqueue_style('modifier',get_template_directory_uri().'/css/modifier.css');
 wp_enqueue_style('style',get_stylesheet_uri(),'');

@@ -1,6 +1,6 @@
 <?php get_header();?>
-<body <?php if(have_posts()):?>
-	<?php while(have_posts()):the_post();?>>
+<body>
+<?php if(have_posts()):?><?php while(have_posts()):the_post();?>
 	<header>
 	<div id="header_layer">
 		<h1>
@@ -34,24 +34,19 @@
 				<?php endif;?>
 			</ul>
 			<?php the_time('Y年n月j日'); ?>
-			<?php wp_nav_menu( array( 'theme_location' => 'global-menu' ) );?>
 		</nav>
 		<?php endif;?>
 		</div><!--END-header_layer-->
 		<?php the_post_thumbnail(); ?>
 	</header>
-			
-
-	<main class="<?php post_class();?>">
+	<main <?php post_class();?>>
 	<article id="main_article">
 		<?php the_content();?>
 	</article>
-		<?php endwhile;?>
-		<?php endif;?>
 	</main>
-	<?php get_sidebar(); ?>
-	<footer>
+	<?php endwhile;?>
+		<?php endif;?>
 	<?php get_footer();?>
-	</footer>
+	<p>indexテンプレ</p>
 </body>
 </html>
