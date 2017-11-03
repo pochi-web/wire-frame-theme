@@ -1,5 +1,5 @@
 <?php/*
-Template Name: Category
+Template Name: Archive
 */
 ?>
 <?php get_header();?>
@@ -31,7 +31,7 @@ Template Name: Category
 		</a>
 		</div>
 		<nav id="tag_navigation">	
-	<?php if (get_the_tags()) the_tags('<ul id="tag_list"><li class="tag_name">','</li><li class="tag_name">','</li></ul>'); ?>
+	<?php if (the_category()) the_category('<ul id="tag_list"><li class="tag_name">','</li><li class="tag_name">','</li></ul>'); ?>
 	</nav>
 	</section>
 		<?php endwhile;?>
@@ -40,7 +40,6 @@ Template Name: Category
 	<?php get_sidebar(); ?>
 	<footer>
 	<?php get_footer();?>
-	<p>テンプレート：archive</p>
 	</footer>
 </body>
 </html>

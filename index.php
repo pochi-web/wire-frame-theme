@@ -1,7 +1,7 @@
 <?php get_header();?>
 <body>
 <?php if(have_posts()):?><?php while(have_posts()):the_post();?>
-	<header>
+	<header id="header">
 	<div id="header_layer">
 		<h1>
 			<?php echo get_the_title();?>
@@ -47,6 +47,5 @@
 	<?php endwhile;?>
 		<?php endif;?>
 	<?php get_footer();?>
-	<p>indexテンプレ</p>
 </body>
 </html>

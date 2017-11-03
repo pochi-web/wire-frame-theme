@@ -24,8 +24,8 @@ add_action( 'init', 'register_my_menus' );
 
 //theme suports
 
-add_theme_support( 'post-thumbnails' ); 
-
+add_theme_support( 'post-thumbnails' );
+add_post_type_support( 'page','excerpt' );
 //custom excerpt ending
 function new_excerpt_more($more) {
 	return '';

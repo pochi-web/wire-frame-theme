@@ -51,7 +51,7 @@ margin:0;
 padding:0;
 }
 table {
-border-collapse:collapse;
+border-collapse:separate;
 border-spacing:0;
 }
 fieldset,
@@ -134,8 +134,8 @@ body{
 	height:100%;
 	padding:6px;
 	font-family: Noto Sans Japanese;
-	font-size:16px
-
+	font-size:16px;
+	padding-bottom: calc(123px + 2em);
 }
 a{
 	text-decoration: none;
@@ -174,10 +174,11 @@ header{
     display: block;
 	overflow: hidden;
 }
-#header_layer p{
-	width:80%;
-	padding:1em;
-	margin:auto;
+#header_layer p,
+#header_layer form{
+	width: 100%;
+    padding: 1em 0 1em;
+    margin: auto;
 }
 #header_nav{
 	padding:1em 0 2em;
@@ -194,7 +195,8 @@ header{
 	margin:0.35rem;
 }
 .category_name a,
-.tag_name a{
+.tag_name a,
+.form-submit>#submit{
 	width:initial;
 	padding:0.3em 0.5em;	
 } 
@@ -210,7 +212,7 @@ header{
 	margin:2em auto 1em;
 	
 }
-#menu-global{
+.menu{
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: row;
@@ -231,32 +233,32 @@ header.attachment-post-thumbnail{
 index.php
 -------------------------------------*/
 main{
-	padding:1em 0 110px;
-	position: relative;
-	z-index:30;
+	padding: 1em 0 123px;
+    position: relative;
+    z-index: 30;
+    min-height: 50vh;
 }
+
 article{
 	 max-width: 760px;
     margin: auto;
 }
 h2,
-h3{
-	margin: 1em 0.5em;
-    padding: .5em;
-	line-height:1.7;
-
-}
-
-h4{
+h3,
+h4,
+h5{
 	margin: 1em 0.5em;
     padding: .5em;
 	line-height:1.7;
 }
-
 p,ul,#menu-global-container{
 	margin: 0 0.5em;
     padding: .5em;
 	line-height: 1.7;
+}
+
+li{
+	padding:0.25rem 0;
 }
 
 ol{
@@ -264,11 +266,76 @@ ol{
     padding: .5em 2em;
 	line-height: 1.7;
 }
-#main_article blockquote{
+article blockquote{
 	margin: 1em auto;
 	padding:0.7em 1em;
 	width:70%;
 	line-height: 1.7;
+}
+article img{
+	max-width:100%;
+}
+article .wp-caption{
+	padding:0.7em 0;
+	max-width:100%;
+}
+article table{
+	margin: 1em 0.5em;
+    padding: .5em;
+}
+article dl{
+	margin: 1em 0.5em;
+	padding: .5em;
+}
+article dt,
+article dd{
+	padding:0.25rem 0;
+	
+}
+article dt{
+	padding-left: 1rem;
+    border-bottom: dotted 1px #43C6AC;
+    color: #0F3260;
+    font-weight: bold;
+}
+article dd{
+	padding-left:1rem;
+}
+
+article address{
+	margin: 0 0.5em;
+    padding: .5em;
+    line-height: 1.7;
+}
+article p a,
+article li a,
+.wp-caption-text a,
+article table a{
+	color:inherit;
+	text-decoration: underline;	
+}
+.alignnone {
+    margin: 5px 0;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto;
+}
+.wp-caption-text{
+	margin:0;
+	padding:0 1em;
+	line-height: 1.2
 }
 /*-----------------------------
 category.php
@@ -311,7 +378,7 @@ time{
 	padding:0.3rem 0.7rem;
 	
 }
-#tag_list{
+#tag_navigation .post-categories{
 	margin:0;
 	padding:0 0.7em;
 	display:flex;
@@ -323,10 +390,7 @@ time{
 #tag_navigation{
 	margin-top:0.5rem;
 }
-.articles_index .tag_name {
-	margin:0 0.35rem 0 0;
-}
-.articles_index .tag_name a{
+#tag_navigation .post-categories li a{
 	width:initial;
 	padding:0em 0.5em;
 	font-size:0.8rem;
@@ -357,17 +421,58 @@ footer{
 .copyright_text{
 	margin-right: auto;
 }
-#back_to_top{
+#total_navigation ul{
+	display: flex;
+    margin-right: 0;
+}
+.back_to a{
+	padding: 0.2em 0.3em;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+.back_to{
 	margin-right: 0.5em;
-    padding: .5em;
     line-height: 1.7;
 	border:1px solid #f7f7f7;
 	border-radius: 3px;
 	cursor: pointer;
 }
+/*------------------------------------
+コメント
+-------------------------------------*/
+
+.comment-form-comment{
+	text-align: left;
+}
+#comment{
+	width:100%;
+}
+#commentform{
+	padding-bottom:2em;
+}
+.commentlist{
+	background-color:#fff;
+}
+.comment-meta a,
+.comment-reply-link{
+	color:#555;
+}
+.url{
+	color:#555;
+}
+#searchform{
+	margin-left:auto;
+	margin-right:auto;
+}
+#s{
+	box-sizing: border-box;
+	padding:0 0.5rem;
+	border:#555 solid 1px;
+}
 @media (min-width:769px){
 .articles_index_thumbnail {
-    height: 12rem;
+    height: 8rem;
 	}
 .attachment-post-thumbnail{
     width: 100%;
