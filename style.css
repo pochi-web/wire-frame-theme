@@ -104,13 +104,18 @@ main{
 	color:#0F3260;
 	font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
 }
-#main_article strong{
+strong{
+	background: linear-gradient(transparent 60%, #ffff66 60%);
+	font-weight:bold;
+}
+em{
 	background: linear-gradient(transparent 60%, #ffff66 60%);
 }
 #main_article p{
 	font-size:1rem;
 }
-#main_article blockquote{
+blockquote,
+q{
 	background-color:rgba(142,148,157,0.2)
 }
 #main_article ul li:before{

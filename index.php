@@ -45,6 +45,9 @@
 	</article>
 	</main>
 	<?php endwhile;?>
+	<div style="text-align:center;">;
+<?php posts_nav_link( ' &#183; ', 'previous page', 'next page' ); ?>
+</div>
 		<?php endif;?>
 	<?php get_footer();?>
 </body>

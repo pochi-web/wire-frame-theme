@@ -177,6 +177,7 @@ header{
 #header_layer p,
 #header_layer form{
 	width: 100%;
+	max-width:760px;
     padding: 1em 0 1em;
     margin: auto;
 }
@@ -233,7 +234,7 @@ header.attachment-post-thumbnail{
 index.php
 -------------------------------------*/
 main{
-	padding: 1em 0 123px;
+	padding: 1em 0 4em;
     position: relative;
     z-index: 30;
     min-height: 50vh;
@@ -266,7 +267,8 @@ ol{
     padding: .5em 2em;
 	line-height: 1.7;
 }
-article blockquote{
+blockquote,
+q{
 	margin: 1em auto;
 	padding:0.7em 1em;
 	width:70%;
@@ -337,6 +339,13 @@ article table a{
 	padding:0 1em;
 	line-height: 1.2
 }
+code,pre,kbd{
+	overflow:scroll;
+	border-radius: 3px;
+	padding:0.25rem;
+	background-color:#232323;
+	color:#f5f5f5;
+}
 /*-----------------------------
 category.php
 -------------------------------*/
@@ -377,6 +386,11 @@ time{
 	font-size:0.75rem;
 	padding:0.3rem 0.7rem;
 	
+}
+#tag_navigation ul{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 #tag_navigation .post-categories{
 	margin:0;
@@ -441,7 +455,10 @@ footer{
 /*------------------------------------
 コメント
 -------------------------------------*/
-
+#respond{
+	margin:auto;
+	max-width:760px;
+}
 .comment-form-comment{
 	text-align: left;
 }
@@ -450,6 +467,7 @@ footer{
 }
 #commentform{
 	padding-bottom:2em;
+	
 }
 .commentlist{
 	background-color:#fff;

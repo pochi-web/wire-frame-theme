@@ -10,3 +10,13 @@
     border-radius: 3px;
     color: #fff;
 }
+#tag_navigation #tag_list li{
+	border:none;
+	font-size: 0.75rem;
+}
+#tag_navigation #tag_list li a{
+	background: #a01476;
+    font-weight: 200;
+    border-radius: 3px;
+    color: #fff;
+}
